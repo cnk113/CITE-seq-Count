@@ -514,7 +514,7 @@ def main():
     ordered_tags_map = OrderedDict()
     for i, tag in enumerate(ab_map.values()):
         ordered_tags_map[tag] = i
-    ordered_tags_map["unmapped"] = i + 1
+    ordered_tags_map["unmapped"] = 1
 
     # Correct cell barcodes
     if args.bc_threshold > 0:
